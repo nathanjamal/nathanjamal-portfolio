@@ -1,0 +1,9 @@
+{
+  "name": "nathanjamal-portfolio",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "jshint": "~2.4.4",
+    "grunt-contrib-uglify": "~0.3.2"
+  }
+}
