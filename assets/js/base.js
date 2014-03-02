@@ -527,5 +527,28 @@ $(document).ready(function(){
 		Page_helper.Init();
 	},initTO);
 
+});
+
+
+
+// ----- ANGULAR ----- //
+
+var app = angular.module('nathanApp', [])
+
+app.controller('projectsController', function($scope){
+
+	$scope.projects = [
+		{'id': 1, 'name': 'Draftfcb', 'url': 'http://draftfcb.co.uk/', 'img': 'assets/img/work/draft.jpg'},
+		{'id': 2, 'name': 'Lovespace', 'url': 'http://Lovespace.co.uk/', 'img': 'assets/img/work/lovespace.jpg'},
+		{'id': 3, 'name': 'The Guardian #localshopping', 'url': 'http://www.theguardian.com/lifeandstyle/interactive/2012/dec/08/local-shopping-map-photos-twitter-instagram', 'img': 'assets/img/work/localshopping.jpg'},
+		{'id': 4, 'name': 'Guardian #gdngig', 'url': 'http://www.theguardian.com/music/interactive/2012/nov/23/live-music-map-gig-photos-twitter', 'img': 'assets/img/work/gdngig.jpg'},
+		{'id': 5, 'name': 'Victorian Woodworks', 'url': 'http://victorianwoodworks.co.uk/', 'img': 'assets/img/work/vw.jpg'},
+		{'id': 6, 'name': 'Cogs Agency', 'url': 'http://www.cogsagency.com/', 'img': 'assets/img/work/cogs.jpg'},
+		{'id': 7, 'name': 'The Creative Directory', 'url': 'http://thecreativedirectory.com/', 'img': 'assets/img/work/tcd.jpg'},
+		{'id': 8, 'name': 'Jaguar Desire Poster Competion', 'url': 'http://postercompetition.f-type.com/en_GB/', 'img': 'assets/img/work/jaguar.jpg'},
+		{'id': 9, 'name': 'Action for Happines', 'url': 'http://actionforhappiness.org/', 'img': 'assets/img/work/action-for-happiness.jpg'}
+
+	];
 
 });
+
