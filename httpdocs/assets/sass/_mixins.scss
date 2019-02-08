@@ -1,0 +1,33 @@
+
+
+@mixin transition($property, $duration, $ease) {
+  	-webkit-transition: $property $duration $ease;
+    -moz-transition: $property $duration $ease;
+    -ms-transition: $property $duration $ease;
+    -o-transition: $property $duration $ease;
+    transition: $property $duration $ease;
+}
+
+@mixin translate($x, $y, $z) {
+    -webkit-transform: translate3d($x, $y, $z);
+    -moz-transform: translate3d($x, $y, $z);
+    -ms-transform: translate3d($x, $y, $z);
+    -o-transform: translate3d($x, $y, $z);
+    transform: translate3d($x, $y, $z);
+}
+
+@mixin scale($scale) {
+    -webkit-transform: scale($scale);
+    -moz-transform: scale($scale);
+    -ms-transform: scale($scale);
+    -o-transform: scale($scale);
+    transform: scale($scale);
+}
+
+@mixin opacity($value) {
+    filter: alpha(opacity= $value * 100 ); /* IE lt 8 */
+    -ms-filter: "alpha(opacity= $value * 100 )"; /* IE 8 */
+    -khtml-opacity: $value; /* Safari 1.x */
+    -moz-opacity: $value; /* FF lt 1.5, Netscape */
+    opacity: $value; /* Standard: FF gt 1.5, Opera, Safari */
+}

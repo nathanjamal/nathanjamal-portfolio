@@ -1,0 +1,75 @@
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden{display:none;}
+
+.hidden2{
+    height: 0px;
+    overflow: hidden;
+}
+
+.inline-block{
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom:1;
+    *display: inline;
+    vertical-align: top;
+}
+
+.hide-text{
+    text-indent: 105%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.clear-both{
+    clear: both;
+    height: 0px;
+}
+
+.u-h {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}
+
+.caro{
+    overflow: hidden;
+    position: relative;
+}
+
+.reel{
+    width: 4000px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.reel li{float: left;}
+
+.wrap{
+    white-space: pre-wrap; /* css-3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.hardware-accel{
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
